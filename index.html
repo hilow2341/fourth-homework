@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-auto">
+                <a href="#" id="high-scores-link" onclick="viewHighScores()">View High Scores</a>
+                <a href="#" id="back-to-start-link" onclick="goBackToStart()" style="display: none;">Go Back to Start</a>
+            </div>
+            <div id="game-clock-container" class="col text-right">
+                Time: <span id="game-clock">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <main class="col-12 col-md-8">
+                <h1 id="heading1" class="mb-3">Javascript Code Quiz!</h1>
+                <div id="enter-initials-menu" class="py-4 mb-3 border-bottom" style="display: none;">
+                    <h3>Enter your initials</h3>
+                    <form>
+                        <input id="initials-input" type="text" name="score" style="border: 1px solid #d6d6d6;" /><button style="    background-color: #f6f5f5;
+                        border: 1px solid #d6d6d6;
+                        height: 28px;
+                        border-left: none;" id="submit-intials-btn">Submit</button>
+                    </form>
+                </div>
+                <div id="start-menu">
+                    <p>Test your knowledge of Javascript by answering a series of questions.</p>
+
+                    <button onclick="startQuiz()" class="btn btn-success">Start the Quiz!</button>
+                </div>
+                
+                <div id="choices-menu">
+
+                </div>
+
+                <div id="scores-menu">
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/questions.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+</html>
